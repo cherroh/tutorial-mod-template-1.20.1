@@ -1,5 +1,7 @@
 package net.cherrow.tutorialmod;
 
+import net.cherrow.tutorialmod.item.ModItemGroups;
+import net.cherrow.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,6 +20,9 @@ public class TutorialMod implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
+		ModItemGroups.registerItemGroups();
+
 		LOGGER.info("Hello Fabric world!"); //hi
+		ModItems.registerModItems();
 	}
 }
