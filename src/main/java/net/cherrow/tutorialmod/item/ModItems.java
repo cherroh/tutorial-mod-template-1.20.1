@@ -20,6 +20,8 @@ public class ModItems {
             new MetalDetectorItem(new FabricItemSettings().maxDamage(64)));
 
     public static final Item TOMATO = registerItem("tomato", new Item(new FabricItemSettings().food(ModFoodComponents.TOMATO)));
+    public static final Item COAL_FLESH = registerItem("coal_flesh",
+            new Item(new FabricItemSettings()));
 
     public static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);

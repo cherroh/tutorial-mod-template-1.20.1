@@ -23,6 +23,7 @@ public class ModItemGroups {
                         entries.add(ModItems.METAL_DETECTOR);
 
                         entries.add(ModItems.TOMATO);
+                        entries.add(ModItems.COAL_FLESH);
 
                         entries.add(Items.DIAMOND);
 
