@@ -3,6 +3,7 @@ package net.cherrow.tutorialmod;
 import net.cherrow.tutorialmod.block.ModBlocks;
 import net.cherrow.tutorialmod.item.ModItemGroups;
 import net.cherrow.tutorialmod.item.ModItems;
+import net.cherrow.tutorialmod.util.ModCustomTrades;
 import net.cherrow.tutorialmod.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
@@ -30,6 +31,7 @@ public class TutorialMod implements ModInitializer {
 		ModBlocks.registerModBlocks();
 
 		ModLootTableModifiers.modifyLootTables();
+		ModCustomTrades.registerCustomTrades();
 
 		FuelRegistry.INSTANCE.add(ModItems.COAL_FLESH, 200);
 	}
