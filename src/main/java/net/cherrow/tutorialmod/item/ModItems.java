@@ -2,6 +2,7 @@ package net.cherrow.tutorialmod.item;
 
 import net.cherrow.tutorialmod.TutorialMod;
 import net.cherrow.tutorialmod.item.custom.MetalDetectorItem;
+import net.cherrow.tutorialmod.item.custom.ModArmorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -37,7 +38,7 @@ public class ModItems {
             new HoeItem(ModToolMaterial.RUBY, 0, 0f, new FabricItemSettings()));
 
     public static final Item RUBY_HELMET = registerItem("ruby_helmet",
-            new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.HELMET, new FabricItemSettings()));
+            new ModArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.HELMET, new FabricItemSettings()));
     public static final Item RUBY_CHESTPLATE = registerItem("ruby_chestplate",
             new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item RUBY_LEGGINGS = registerItem("ruby_leggings",
