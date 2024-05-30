@@ -1,6 +1,7 @@
 package net.cherrow.tutorialmod.item;
 
 import net.cherrow.tutorialmod.TutorialMod;
+import net.cherrow.tutorialmod.block.ModBlocks;
 import net.cherrow.tutorialmod.item.custom.MetalDetectorItem;
 import net.cherrow.tutorialmod.item.custom.ModArmorItem;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -45,6 +46,9 @@ public class ModItems {
             new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
     public static final Item RUBY_BOOTS = registerItem("ruby_boots",
             new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+
+    public static final Item TOMATO_SEEDS = registerItem("tomato_seeds",
+            new AliasedBlockItem(ModBlocks.TOMATO_CROP, new FabricItemSettings()));
 
     public static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);
