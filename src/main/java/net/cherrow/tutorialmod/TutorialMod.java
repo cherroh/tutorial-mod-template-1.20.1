@@ -3,6 +3,7 @@ package net.cherrow.tutorialmod;
 import net.cherrow.tutorialmod.block.ModBlocks;
 import net.cherrow.tutorialmod.item.ModItemGroups;
 import net.cherrow.tutorialmod.item.ModItems;
+import net.cherrow.tutorialmod.sound.ModSounds;
 import net.cherrow.tutorialmod.util.ModCustomTrades;
 import net.cherrow.tutorialmod.util.ModLootTableModifiers;
 import net.cherrow.tutorialmod.villager.ModVillagers;
@@ -35,6 +36,7 @@ public class TutorialMod implements ModInitializer {
 		ModCustomTrades.registerCustomTrades();
 
 		ModVillagers.registerVillagers();
+		ModSounds.registerSounds();
 
 		FuelRegistry.INSTANCE.add(ModItems.COAL_FLESH, 200);
 	}
