@@ -3,6 +3,7 @@ package net.cherrow.tutorialmod;
 import net.cherrow.tutorialmod.block.ModBlocks;
 import net.cherrow.tutorialmod.item.ModItemGroups;
 import net.cherrow.tutorialmod.item.ModItems;
+import net.cherrow.tutorialmod.util.ModLootTableModifiers;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.registry.FuelRegistry;
@@ -27,6 +28,8 @@ public class TutorialMod implements ModInitializer {
 		LOGGER.info("Hello Fabric world!"); //hi
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+
+		ModLootTableModifiers.modifyLootTables();
 
 		FuelRegistry.INSTANCE.add(ModItems.COAL_FLESH, 200);
 	}
