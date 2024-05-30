@@ -63,7 +63,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RUBY_BUTTON);
                         entries.add(ModBlocks.RUBY_PRESSURE_PLATE);
                         entries.add(ModBlocks.RUBY_DOOR);
-                        entries.add(ModBlocks.RUBY_TRAPDOOR);
+
+                        entries.add(ModBlocks.DAHLIA);
 
                     }).build());
 
