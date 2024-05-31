@@ -6,6 +6,7 @@ import net.cherrow.tutorialmod.entity.ModEntities;
 import net.cherrow.tutorialmod.entity.custom.PorcupineEntity;
 import net.cherrow.tutorialmod.item.ModItemGroups;
 import net.cherrow.tutorialmod.item.ModItems;
+import net.cherrow.tutorialmod.recipe.ModRecipes;
 import net.cherrow.tutorialmod.screen.ModScreenHandlers;
 import net.cherrow.tutorialmod.sound.ModSounds;
 import net.cherrow.tutorialmod.util.ModCustomTrades;
@@ -45,6 +46,8 @@ public class TutorialMod implements ModInitializer {
 
 		ModBlockEntities.registerBlockEntities();
 		ModScreenHandlers.registerScreenHandlers();
+
+		ModRecipes.registerRecipes();
 
 		FuelRegistry.INSTANCE.add(ModItems.COAL_FLESH, 200);
 		FabricDefaultAttributeRegistry.register(ModEntities.PORCUPINE, PorcupineEntity.createPorcupineAttributes());
