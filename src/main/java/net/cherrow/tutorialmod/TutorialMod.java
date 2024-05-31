@@ -1,10 +1,12 @@
 package net.cherrow.tutorialmod;
 
 import net.cherrow.tutorialmod.block.ModBlocks;
+import net.cherrow.tutorialmod.block.entity.ModBlockEntities;
 import net.cherrow.tutorialmod.entity.ModEntities;
 import net.cherrow.tutorialmod.entity.custom.PorcupineEntity;
 import net.cherrow.tutorialmod.item.ModItemGroups;
 import net.cherrow.tutorialmod.item.ModItems;
+import net.cherrow.tutorialmod.screen.ModScreenHandlers;
 import net.cherrow.tutorialmod.sound.ModSounds;
 import net.cherrow.tutorialmod.util.ModCustomTrades;
 import net.cherrow.tutorialmod.util.ModLootTableModifiers;
@@ -40,6 +42,9 @@ public class TutorialMod implements ModInitializer {
 
 		ModVillagers.registerVillagers();
 		ModSounds.registerSounds();
+
+		ModBlockEntities.registerBlockEntities();
+		ModScreenHandlers.registerScreenHandlers();
 
 		FuelRegistry.INSTANCE.add(ModItems.COAL_FLESH, 200);
 		FabricDefaultAttributeRegistry.register(ModEntities.PORCUPINE, PorcupineEntity.createPorcupineAttributes());
