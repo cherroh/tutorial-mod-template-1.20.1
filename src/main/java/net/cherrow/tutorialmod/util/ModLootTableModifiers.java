@@ -48,7 +48,7 @@ public class ModLootTableModifiers {
             }
         });
 
-        LootTableEvents.REPLACE.register((resourceManager, lootManager, id, original, source) -> {
+        /*LootTableEvents.REPLACE.register((resourceManager, lootManager, id, original, source) -> {
             if(SUSPICIOUS_SAND_ID.equals(id)) {
                 List<LootPoolEntry> entries = new ArrayList<>(Arrays.asList(original.pools[0].entries));
                 entries.add(ItemEntry.builder(ModItems.METAL_DETECTOR).build());
@@ -59,7 +59,7 @@ public class ModLootTableModifiers {
             }
 
             return null;
-        });
+        });*/
 
     }
 }
