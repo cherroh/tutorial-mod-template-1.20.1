@@ -2,6 +2,7 @@ package net.cherrow.tutorialmod.item;
 
 import net.cherrow.tutorialmod.TutorialMod;
 import net.cherrow.tutorialmod.block.ModBlocks;
+import net.cherrow.tutorialmod.entity.ModEntities;
 import net.cherrow.tutorialmod.item.custom.MetalDetectorItem;
 import net.cherrow.tutorialmod.item.custom.ModArmorItem;
 import net.cherrow.tutorialmod.sound.ModSounds;
@@ -58,6 +59,9 @@ public class ModItems {
 
     public static final Item BAR_BRAWL_MUSIC_DISC = registerItem("bar_brawl_music_disc",
             new MusicDiscItem(7, ModSounds.BAR_BRAWL, new FabricItemSettings().maxCount(1), 122));
+
+    public static final Item PORCUPINE_SPAWN_EGG = registerItem("porcupine_spawn_egg",
+            new SpawnEggItem(ModEntities.PORCUPINE, 0xa86518, 0x3b260f, new FabricItemSettings()));
 
     public static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);

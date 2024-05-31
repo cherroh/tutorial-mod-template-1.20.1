@@ -1,6 +1,8 @@
 package net.cherrow.tutorialmod;
 
 import net.cherrow.tutorialmod.block.ModBlocks;
+import net.cherrow.tutorialmod.entity.ModEntities;
+import net.cherrow.tutorialmod.entity.custom.PorcupineEntity;
 import net.cherrow.tutorialmod.item.ModItemGroups;
 import net.cherrow.tutorialmod.item.ModItems;
 import net.cherrow.tutorialmod.sound.ModSounds;
@@ -9,6 +11,7 @@ import net.cherrow.tutorialmod.util.ModLootTableModifiers;
 import net.cherrow.tutorialmod.villager.ModVillagers;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -39,5 +42,6 @@ public class TutorialMod implements ModInitializer {
 		ModSounds.registerSounds();
 
 		FuelRegistry.INSTANCE.add(ModItems.COAL_FLESH, 200);
+		FabricDefaultAttributeRegistry.register(ModEntities.PORCUPINE, PorcupineEntity.createPorcupineAttributes());
 	}
 }
