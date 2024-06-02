@@ -1,5 +1,6 @@
 package net.cherrow.tutorialmod;
 
+import net.cherrow.tutorialmod.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
@@ -56,5 +57,7 @@ public class TutorialMod implements ModInitializer {
 
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHESTNUT_PLANKS, 5, 20);
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHESTNUT_LEAVES, 30, 60);
+
+		ModWorldGeneration.generateModWorldGen();
 	}
 }
