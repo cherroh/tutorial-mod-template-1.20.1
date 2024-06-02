@@ -19,6 +19,8 @@ import net.cherrow.tutorialmod.sound.ModSounds;
 import net.cherrow.tutorialmod.util.ModCustomTrades;
 import net.cherrow.tutorialmod.util.ModLootTableModifiers;
 import net.cherrow.tutorialmod.villager.ModVillagers;
+import net.kyrptonaught.customportalapi.api.CustomPortalBuilder;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -59,5 +61,12 @@ public class TutorialMod implements ModInitializer {
 		FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.CHESTNUT_LEAVES, 30, 60);
 
 		ModWorldGeneration.generateModWorldGen();
+
+		CustomPortalBuilder.beginPortal()
+				.frameBlock(ModBlocks.RUBY_BLOCK)
+				.lightWithItem(ModItems.CORN)
+				.destDimID(new Identifier(TutorialMod.MOD_ID, "cherrowdim"))
+				.tintColor(0xc76efa)
+				.registerPortal();
 	}
 }
