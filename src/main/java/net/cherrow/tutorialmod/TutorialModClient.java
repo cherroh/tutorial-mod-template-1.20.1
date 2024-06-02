@@ -16,6 +16,7 @@ import net.cherrow.tutorialmod.screen.ModScreenHandlers;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
 import net.minecraft.client.render.RenderLayer;
 import net.minecraft.client.render.block.entity.BlockEntityRendererFactories;
+import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 
 public class TutorialModClient implements ClientModInitializer {
     @Override
@@ -37,5 +38,7 @@ public class TutorialModClient implements ClientModInitializer {
         HandledScreens.register(ModScreenHandlers.GEM_POLISHING_SCREEN_HANDLER, GemPolishingScreen::new);
 
         BlockEntityRendererFactories.register(ModBlockEntities.GEM_POLISHING_STATION_BLOCK_ENTITY, GemPolishingBlockEntityRenderer::new);
+
+        EntityRendererRegistry.register(ModEntities.DICE_PROJECTILE, FlyingItemEntityRenderer::new);
     }
 }

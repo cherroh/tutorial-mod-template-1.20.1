@@ -1,10 +1,7 @@
 package net.cherrow.tutorialmod.block;
 
 import net.cherrow.tutorialmod.TutorialMod;
-import net.cherrow.tutorialmod.block.custom.CornCropBlock;
-import net.cherrow.tutorialmod.block.custom.GemPolishingStationBlock;
-import net.cherrow.tutorialmod.block.custom.SoundBlock;
-import net.cherrow.tutorialmod.block.custom.TomatoCropBlock;
+import net.cherrow.tutorialmod.block.custom.*;
 import net.cherrow.tutorialmod.sound.ModSounds;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -88,6 +85,9 @@ public class ModBlocks {
             new Block(FabricBlockSettings.copyOf(Blocks.OAK_PLANKS).strength(4f)));
     public static final Block CHESTNUT_LEAVES = registerBlock("chestnut_leaves",
             new LeavesBlock(FabricBlockSettings.copyOf(Blocks.OAK_LEAVES).strength(4f).nonOpaque()));
+
+    public static final Block DICE_BLOCK = Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, "dice_block"),
+            new DiceBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -1,8 +1,8 @@
 package net.cherrow.tutorialmod.item;
 
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.cherrow.tutorialmod.TutorialMod;
 import net.cherrow.tutorialmod.block.ModBlocks;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -47,6 +47,8 @@ public class ModItemGroups {
                         entries.add(ModItems.PORCUPINE_SPAWN_EGG);
 
                         entries.add(Items.DIAMOND);
+
+                        entries.add(ModItems.DICE);
 
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModBlocks.RAW_RUBY_BLOCK);

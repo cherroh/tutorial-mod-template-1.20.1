@@ -3,6 +3,7 @@ package net.cherrow.tutorialmod.item;
 import net.cherrow.tutorialmod.TutorialMod;
 import net.cherrow.tutorialmod.block.ModBlocks;
 import net.cherrow.tutorialmod.entity.ModEntities;
+import net.cherrow.tutorialmod.item.custom.DiceItem;
 import net.cherrow.tutorialmod.item.custom.MetalDetectorItem;
 import net.cherrow.tutorialmod.item.custom.ModArmorItem;
 import net.cherrow.tutorialmod.sound.ModSounds;
@@ -62,6 +63,8 @@ public class ModItems {
 
     public static final Item PORCUPINE_SPAWN_EGG = registerItem("porcupine_spawn_egg",
             new SpawnEggItem(ModEntities.PORCUPINE, 0xa86518, 0x3b260f, new FabricItemSettings()));
+
+    public static final Item DICE = registerItem("dice", new DiceItem(new FabricItemSettings()));
 
     public static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);
