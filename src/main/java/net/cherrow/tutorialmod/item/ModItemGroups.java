@@ -79,6 +79,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.CHESTNUT_PLANKS);
                         entries.add(ModBlocks.CHESTNUT_LEAVES);
 
+                        entries.add(ModBlocks.CHESTNUT_SAPLING);
+
                     }).build());
 
     public static void registerItemGroups() {

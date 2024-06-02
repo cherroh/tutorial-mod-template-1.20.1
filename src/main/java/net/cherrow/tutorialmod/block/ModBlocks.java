@@ -3,6 +3,7 @@ package net.cherrow.tutorialmod.block;
 import net.cherrow.tutorialmod.TutorialMod;
 import net.cherrow.tutorialmod.block.custom.*;
 import net.cherrow.tutorialmod.sound.ModSounds;
+import net.cherrow.tutorialmod.world.tree.ChestnutSaplingGenerator;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -88,6 +89,9 @@ public class ModBlocks {
 
     public static final Block DICE_BLOCK = Registry.register(Registries.BLOCK, new Identifier(TutorialMod.MOD_ID, "dice_block"),
             new DiceBlock(FabricBlockSettings.copyOf(Blocks.STONE)));
+
+    public static final Block CHESTNUT_SAPLING = registerBlock("chestnut_sapling",
+            new SaplingBlock(new ChestnutSaplingGenerator(), FabricBlockSettings.copyOf(Blocks.OAK_SAPLING)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
