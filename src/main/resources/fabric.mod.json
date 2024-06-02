@@ -26,6 +26,9 @@
 		],
 		"rei_client": [
 			"net.cherrow.tutorialmod.compat.TutorialModREIClientPlugin"
+		],
+		"terrablender": [
+			"net.cherrow.tutorialmod.world.biome.ModTerrablenderAPI"
 		]
 	},
 	"mixins": [
