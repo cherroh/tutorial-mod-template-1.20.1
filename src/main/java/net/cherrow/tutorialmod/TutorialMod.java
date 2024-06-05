@@ -30,9 +30,11 @@ public class TutorialMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItemGroups.registerItemGroups();
+		ModItemGroups.registerItemGroups(); //calls a logger statement, activates final objects in ModItemGroups
 
-		ModItems.registerModItems();
+		ModItems.registerModItems(); //calls a logger statement, activates final objects in ModItems
+		//also adds modded items to the creative ingredient tab
+
 		ModBlocks.registerModBlocks();
 
 		ModLootTableModifiers.modifyLootTables();

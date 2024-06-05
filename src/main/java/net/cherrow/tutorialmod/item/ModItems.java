@@ -66,6 +66,7 @@ public class ModItems {
 
     public static final Item DICE = registerItem("dice", new DiceItem(new FabricItemSettings()));
 
+    //adds RUBY and RAW_RUBY to the creative ingredient tab
     public static void addItemsToIngredientItemGroup(FabricItemGroupEntries entries) {
         entries.add(RUBY);
         entries.add(RAW_RUBY);
@@ -76,9 +77,10 @@ public class ModItems {
     }
 
     public static void registerModItems() {
-        TutorialMod.LOGGER.info("Registering Mod Items for " + TutorialMod.MOD_ID);
+        TutorialMod.LOGGER.info("Registering Mod Items for " + TutorialMod.MOD_ID); //activates final objects in this class
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientItemGroup); //edits ingredient creative tab
+        //.INGREDIENTS is the ingredients creative tab
     }
 
 }

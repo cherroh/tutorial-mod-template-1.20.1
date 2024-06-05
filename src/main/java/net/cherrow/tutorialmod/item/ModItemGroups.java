@@ -13,6 +13,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItemGroups {
 
+    //creates the custom ruby creative tab located on 2nd page of creative menu
     public static final ItemGroup RUBY_GROUP = Registry.register(Registries.ITEM_GROUP,
             new Identifier(TutorialMod.MOD_ID, "ruby"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.ruby"))
@@ -83,6 +84,7 @@ public class ModItemGroups {
 
                     }).build());
 
+    //method indirectly initializes the final objects above
     public static void registerItemGroups() {
         TutorialMod.LOGGER.info("Registering Item Groups for " + TutorialMod.MOD_ID);
     }
